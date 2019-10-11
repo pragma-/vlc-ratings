@@ -35,7 +35,7 @@ function descriptor()
 end
 
 local playlist = {}          -- holds all music items form the current playlist
-local store = {}	         -- holds all music items from the database
+local store = {}             -- holds all music items from the database
 local dialog                 -- main GUI interface
 local prefix = "[ratings] "  -- prefix to log messages
 local data_file = ""         -- path to data file
