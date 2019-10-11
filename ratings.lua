@@ -91,7 +91,7 @@ function show_gui()
 	input_min_rating = dialog:add_text_input("1", 2, 6)
 	dialog:add_label("Shuffle Max Rating:", 3, 6)
 	input_max_rating = dialog:add_text_input("10", 4, 6)
-	button_shuffle = dialog:add_button("Shuffle Playlist", onclick_shuffle, 5, 6)
+	dialog:add_button("Shuffle Playlist", onclick_shuffle, 5, 6)
 
 	dialog:add_button("Refresh Playlist", onclick_refresh, 1, 7)
 	dialog:add_button("Reset Unlocked Ratings", onclick_reset_ratings, 2, 7)
