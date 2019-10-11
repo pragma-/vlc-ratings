@@ -73,19 +73,19 @@ function show_gui()
 		end
 	end
 
-	button_rate1  = dialog:add_button("1",  onclick_rateN("1"),  1, 3)
-	button_rate2  = dialog:add_button("2",  onclick_rateN("2"),  2, 3)
-	button_rate3  = dialog:add_button("3",  onclick_rateN("3"),  3, 3)
-	button_rate4  = dialog:add_button("4",  onclick_rateN("4"),  4, 3)
-	button_rate5  = dialog:add_button("5",  onclick_rateN("5"),  5, 3)
+	dialog:add_button("1",  onclick_rateN("1"),  1, 3)
+	dialog:add_button("2",  onclick_rateN("2"),  2, 3)
+	dialog:add_button("3",  onclick_rateN("3"),  3, 3)
+	dialog:add_button("4",  onclick_rateN("4"),  4, 3)
+	dialog:add_button("5",  onclick_rateN("5"),  5, 3)
 
-	button_rate6  = dialog:add_button("6",  onclick_rateN("6"),  1, 4)
-	button_rate7  = dialog:add_button("7",  onclick_rateN("7"),  2, 4)
-	button_rate8  = dialog:add_button("8",  onclick_rateN("8"),  3, 4)
-	button_rate9  = dialog:add_button("9",  onclick_rateN("9"),  4, 4)
-	button_rate10 = dialog:add_button("10", onclick_rateN("10"), 5, 4)
+	dialog:add_button("6",  onclick_rateN("6"),  1, 4)
+	dialog:add_button("7",  onclick_rateN("7"),  2, 4)
+	dialog:add_button("8",  onclick_rateN("8"),  3, 4)
+	dialog:add_button("9",  onclick_rateN("9"),  4, 4)
+	dialog:add_button("10", onclick_rateN("10"), 5, 4)
 
-	button_rate = dialog:add_button("Rate!", onclick_rate, 1, 5, 5)
+	dialog:add_button("Rate!", onclick_rate, 1, 5, 5)
 
 	dialog:add_label("Shuffle Min Rating:", 1, 6)
 	input_min_rating = dialog:add_text_input("1", 2, 6)
@@ -93,8 +93,8 @@ function show_gui()
 	input_max_rating = dialog:add_text_input("10", 4, 6)
 	button_shuffle = dialog:add_button("Shuffle Playlist", onclick_shuffle, 5, 6)
 
-	button_update = dialog:add_button("Refresh Playlist", onclick_refresh, 1, 7)
-	button_reset = dialog:add_button("Reset Unlocked Ratings", onclick_reset_ratings, 2, 7)
+	dialog:add_button("Refresh Playlist", onclick_refresh, 1, 7)
+	dialog:add_button("Reset Unlocked Ratings", onclick_reset_ratings, 2, 7)
 
 	update_gui()
 	dialog:show()
