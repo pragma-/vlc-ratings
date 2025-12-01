@@ -25,7 +25,7 @@ SOFTWARE.
 function descriptor()
 	return {
 		title = "Ratings",
-		version = "1.0",
+		version = "1.0.1",
 		license = "MIT",
 		shortdesc = "Ratings",
 		description = "Rates items and shuffles playlists with a bias towards higher ratings.",
@@ -694,7 +694,7 @@ function load_config_file()
 	local file,err = io.open(config_file, "r")
 	if err then
 		vlc.msg.warn(prefix .. "config file does not exist, creating...")
-		file,err = io.open(data_file, "w")
+		file,err = io.open(config_file, "w")
 		if err then
 			vlc.msg.err(prefix .. "unable to open config file: " .. err)
 			vlc.deactivate()
